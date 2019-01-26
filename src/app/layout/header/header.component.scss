@@ -38,6 +38,7 @@ nav {
         width: 30rem;
         height: 2.2rem;
         margin-top: 0.5rem;
+        transition: width 2s;
     }
 }
 
@@ -46,7 +47,22 @@ nav {
 * Media query small screen
 */
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+    #nav-search {
+        text-align: center;
+    
+        h2 {
+            color: #fff;    
+            font-size: 2.5rem;
+        }
+    
+        h6 {
+            color: #eee;
+        }
+    
+        input {
+            width: 20rem;
+            height: 2.2rem;
+            margin-top: 0.5rem;
+        }
     }
 }
