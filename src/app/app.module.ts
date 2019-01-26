@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { IndexComponent } from './pages/index/index.component';
 import { FavouriteComponent } from './pages/favourite/favourite.component';
+import { BeerItemsComponent } from './partials/beer-items/beer-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     IndexComponent,
-    FavouriteComponent
+    FavouriteComponent,
+    BeerItemsComponent
   ],
   imports: [
     BrowserModule,
