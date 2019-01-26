@@ -1,6 +1,7 @@
 header {
     background-color: #f79400;
     padding-bottom: 2.5rem;
+    overflow: hidden;
 }
 
 nav {
@@ -37,5 +38,15 @@ nav {
         width: 30rem;
         height: 2.2rem;
         margin-top: 0.5rem;
+    }
+}
+
+
+/**
+* Media query small screen
+*/
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
     }
 }

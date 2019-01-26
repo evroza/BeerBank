@@ -1,0 +1,27 @@
+.beer-card{
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    border: 1px solid #000000;
+    margin-bottom: 1.3rem;
+    text-align: center;
+    padding: 10px;
+
+    img.favourite {
+        float: right;
+        width: 15px;
+        height: 15px;
+    }
+
+    img.beer {
+        height: 10rem;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+        color: #f79400;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    }
+}
