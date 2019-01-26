@@ -1,0 +1,41 @@
+header {
+    background-color: #f79400;
+    padding-bottom: 2.5rem;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 1.5em;
+
+    a {
+        display: inline-block;
+        padding: 7px;
+        color: #fff;
+        font-weight: 500;
+    }
+    a:hover {
+        color: #3a3733;
+        text-decoration: none;
+    }
+}
+
+#nav-search {
+    text-align: center;
+
+    h2 {
+        color: #fff;    
+        font-size: 2.5rem;
+    }
+
+    h6 {
+        color: #eee;
+    }
+
+    input {
+        width: 30rem;
+        height: 2.2rem;
+        margin-top: 0.5rem;
+    }
+}
