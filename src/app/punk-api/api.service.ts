@@ -8,12 +8,12 @@ import {BeerItem} from "../models/beer-item-interface";
   providedIn: 'root'
 })
 export class ApiService {
-  baseAPI: string = 'https://api.punkapi.com/v2/beers';
+  private baseAPI: string = 'https://api.punkapi.com/v2/beers';
 
   constructor(private http: HttpClient) { }
 
-  getBeers(page:number, queryObj): Observable<BeerItem[]>{
-    return this.http.get<BeerItem[]>(this.baseAPI + "currencies")
+  getBeers(page:number, queryObj?: any): Observable<BeerItem[]>{
+    return this.http.get<BeerItem[]>(this.baseAPI)
                 .pipe(
                   catchError(this.handleError)
                 );
