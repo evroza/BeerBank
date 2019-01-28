@@ -1,0 +1,15 @@
+.modal-header {
+    border-bottom: 0;
+}
+
+.image-wrapper {
+    min-height: 22rem;
+    display: flex;
+    align-items: center;
+}
+
+img.beer {
+    max-height: 30rem;
+    max-width: 100%;
+    vertical-align: center;
+}

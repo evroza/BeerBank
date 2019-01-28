@@ -1,0 +1,48 @@
+<div class="modal-header">
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="content">
+      <div class="row no-gutters">
+        <div class="col-md-6 col-lg-2">
+          <div class="image-wrapper">
+            <img class="beer" src="{{beer.image_url}}" alt="beer image">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-10">
+          <div class="modal-header">
+              <h2 class="title">{{ beer.name }}
+                <span class="subtitle">{{ beer.tagline }}</span>
+              </h2>
+              <hr class="header-underline" />
+          </div>
+          <div class="modal-body">
+            <div class="chemical-properties">
+              <p>
+                <strong>IBU: </strong><span class="ibu">{{ beer.ibu }}</span>
+                <strong>ABV: </strong><span class="abv">{{ beer.abv }}</span>
+                <strong>EBC: </strong><span class="ebc">{{ beer.ebc }}</span>
+              </p>
+            </div>
+            <p class="description">
+              {{ beer.description }}
+            </p>
+            <h5>Best served with</h5>
+            <ul class="serving-tips">
+              <li *ngFor="let tip of beer.food_pairing">
+                {{ tip }}
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-4" *ngFor="let beer of beers">
+        </div>
+      </div>
+    </div>
+    
+  </div>
