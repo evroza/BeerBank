@@ -1,7 +1,7 @@
 <div class="row">
   <!--Begin: Col-md-3 beer item -->
   <div class="col-md-6 col-lg-4" *ngFor="let beer of beers">
-    <div class="beer-card">
+    <div class="beer-card" (click)="openModalWithComponent(beer)">
       <img class="favourite" src="/assets/images/favourite-on.png" alt="favourite icon">
       <img class="beer" src="{{beer.image_url}}" alt="beer image">
       <h3>
